@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import MaterialsGallery from '@/components/MaterialsGallery';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
+import LocationSection from '@/components/locationsection';
 import Footer from '@/components/Footer';
 
 /**
@@ -23,6 +24,7 @@ export default function Home() {
         <MaterialsGallery />
         <AboutSection />
         <ContactSection />
+        <LocationSection />
       </main>
       <Footer />
     </div>

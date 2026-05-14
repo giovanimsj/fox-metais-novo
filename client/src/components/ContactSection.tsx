@@ -55,8 +55,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-bold text-gray-900 mb-2">Telefone</h3>
-                  <p className="font-roboto text-gray-600">(11) 98765-4321</p>
-                  <p className="font-roboto text-gray-600">(11) 3456-7890</p>
+                  <p className="font-roboto text-gray-600">(42) 99145-4793</p>
                 </div>
               </div>
 
@@ -67,8 +66,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-bold text-gray-900 mb-2">Email</h3>
-                  <p className="font-roboto text-gray-600">contato@foxmetais.com.br</p>
-                  <p className="font-roboto text-gray-600">vendas@foxmetais.com.br</p>
+                  <p className="font-roboto text-gray-600">foxmetaispr@gmail.com</p>
                 </div>
               </div>
 
@@ -79,8 +77,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-bold text-gray-900 mb-2">Localização</h3>
-                  <p className="font-roboto text-gray-600">Rua Industrial, 123</p>
-                  <p className="font-roboto text-gray-600">São Paulo, SP - Brasil</p>
+                  <p className="font-roboto text-gray-600">Rua Jacob Faintyck - 86</p>
+                  <p className="font-roboto text-gray-600">Ponta Grossa, PR - Brasil</p>
                 </div>
               </div>
 
@@ -91,8 +89,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-montserrat font-bold text-gray-900 mb-2">Horário de Funcionamento</h3>
-                  <p className="font-roboto text-gray-600">Segunda a Sexta: 08:00 - 18:00</p>
-                  <p className="font-roboto text-gray-600">Sábado: 08:00 - 13:00</p>
+                  <p className="font-roboto text-gray-600">Segunda a Sexta: 08:30 - 11:30 e das 13:00 - 17:30</p>
                 </div>
               </div>
             </div>
@@ -141,7 +138,7 @@ export default function ContactSection() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-600 focus:ring-2 focus:ring-orange-100 transition-all"
-                  placeholder="(11) 98765-4321"
+                  placeholder="(42) 99145-4793"
                 />
               </div>
 
@@ -175,24 +172,6 @@ export default function ContactSection() {
                 </div>
               )}
             </form>
-          </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="mt-16">
-          <h3 className="font-montserrat font-bold text-2xl text-gray-900 mb-8 text-center">
-            Nossa Localização
-          </h3>
-          <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0485652987246!2d-46.6560847!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa001%3A0xab35da2f5ca62674!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-            ></iframe>
           </div>
         </div>
       </div>

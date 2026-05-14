@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '@/images/logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,12 @@ export default function Header() {
       <div className="container">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-orange-600 to-orange-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-montserrat font-bold text-lg">FM</span>
-            </div>
-            <h1 className="font-montserrat font-bold text-xl text-gray-900">Fox Metais</h1>
+          <div className="flex items-center gap-2 pl-2 md:pl-15">
+            <img
+              src={logo}
+              alt="Logo da Fox Metais - Comércio de Sucatas"
+              className="h-15 md:h-16 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -45,10 +47,10 @@ export default function Header() {
               Sobre
             </button>
             <button
-              onClick={() => scrollToSection('contato')}
+              onClick={() => scrollToSection('location')}
               className="font-roboto text-gray-700 hover:text-orange-600 transition-colors font-medium"
             >
-              Contato
+              Localização
             </button>
           </nav>
 
