@@ -41,8 +41,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#contato" className="font-roboto text-gray-400 hover:text-orange-600 transition-colors">
-                  Contato
+                <a href="#location" className="font-roboto text-gray-400 hover:text-orange-600 transition-colors">
+                  Localização
                 </a>
               </li>
             </ul>
@@ -55,11 +55,6 @@ export default function Footer() {
               <li>
                 <a href="#materiais" className="font-roboto text-gray-400 hover:text-orange-600 transition-colors">
                   Compra de Materiais
-                </a>
-              </li>
-              <li>
-                <a href="#materiais" className="font-roboto text-gray-400 hover:text-orange-600 transition-colors">
-                  Coleta Agendada
                 </a>
               </li>
               <li>
@@ -82,13 +77,12 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <Phone className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-roboto text-gray-400 text-sm">(11) 98765-4321</p>
-                  <p className="font-roboto text-gray-400 text-sm">(11) 3456-7890</p>
+                  <p className="font-roboto text-gray-400 text-sm">(42) 99145-4793</p>
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
-                <p className="font-roboto text-gray-400 text-sm">contato@foxmetais.com.br</p>
+                <p className="font-roboto text-gray-400 text-sm">foxmetaispr@gmail.com</p>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
@@ -113,25 +107,20 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/profile.php?id=61564824015275"
               className="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition-colors"
               aria-label="Facebook"
+              target="_blank"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/foxmetaispr/"
               className="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition-colors"
               aria-label="Instagram"
+              target="_blank"
             >
               <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 hover:bg-orange-600 rounded-lg flex items-center justify-center transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
 

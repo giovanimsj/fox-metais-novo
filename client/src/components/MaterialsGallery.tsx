@@ -1,11 +1,16 @@
 import { useState } from 'react';
+import Latinhas from '@/images/Latinhas.jpeg'
+import ImagemAluminios from "@/images/ImagemAluminios.jpeg"
+import ImagemFerro from '@/images/ImagemMista.jpeg'
+import ImagemBateria from '@/images/ImagemBaterias.jpeg'
+import ImagemEletronicos from '@/images/ImagemSucataEletronicos.jpeg'
+import imagemMista from '@/images/ImagemMistaComGarra.jpeg'
 
 interface Material {
   id: string;
   name: string;
   description: string;
   image: string;
-  icon: string;
   color: string;
 }
 
@@ -14,48 +19,42 @@ const materials: Material[] = [
     id: 'eletronicos',
     name: 'Eletrônicos',
     description: 'Computadores, celulares, tablets, placas eletrônicas e componentes diversos.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/electronics-materials-WVUJQbLzwZd46v3zhGyZci.webp',
-    icon: '💻',
+    image: `${ImagemEletronicos}`,
     color: 'from-blue-500 to-blue-600',
   },
   {
     id: 'ferro',
     name: 'Ferro',
     description: 'Ferro estrutural, chapas, tubos, sucata de ferro e aço de qualidade.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/metal-materials-AKrzVcfRU67dJBeYqZWaJM.webp',
-    icon: '⚙️',
+    image: `${ImagemFerro}`,
     color: 'from-gray-600 to-gray-700',
   },
   {
     id: 'aluminio',
     name: 'Alumínio',
     description: 'Alumínio em pó, sucata de alumínio, perfis e chapas de primeira qualidade.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/metal-materials-AKrzVcfRU67dJBeYqZWaJM.webp',
-    icon: '🪨',
+    image: `${ImagemAluminios}`,
     color: 'from-slate-400 to-slate-500',
   },
   {
     id: 'latinha',
     name: 'Latinha',
     description: 'Latas de alumínio, sucata de alumínio e materiais similares.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/metal-materials-AKrzVcfRU67dJBeYqZWaJM.webp',
-    icon: '🥫',
+    image: `${Latinhas}`,
     color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 'baterias',
     name: 'Baterias',
     description: 'Baterias automotivas, baterias recarregáveis e componentes eletrônicos.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/batteries-recycling-FZjjkjZ5QRBvQwsSG8XCxP.webp',
-    icon: '🔋',
+    image: `${ImagemBateria}`,
     color: 'from-green-500 to-green-600',
   },
   {
-    id: 'cobre',
-    name: 'Cobre',
-    description: 'Fios de cobre, tubos, placas e sucata de cobre de alta pureza.',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663538864508/5vnjvwTwmiAHZhNTVx5NhD/metal-materials-AKrzVcfRU67dJBeYqZWaJM.webp',
-    icon: '🧵',
+    id: 'Ferro Misto',
+    name: 'Ferro Misto',
+    description: 'Materiais ferrosos, como geladeiras, micro-ondas, chapas, grades e outros itens metálicos.',
+    image: `${imagemMista}`,
     color: 'from-orange-500 to-orange-600',
   },
 ];
@@ -94,7 +93,6 @@ export default function MaterialsGallery() {
                 />
                 <div className={`absolute inset-0 bg-gradient-to-t ${material.color} opacity-0 group-hover:opacity-40 transition-opacity duration-300`}></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-6xl">{material.icon}</span>
                 </div>
               </div>
 
@@ -116,7 +114,6 @@ export default function MaterialsGallery() {
                     <ul className="font-roboto text-sm text-gray-600 space-y-2">
                       <li>✓ Qualidade garantida</li>
                       <li>✓ Melhor preço do mercado</li>
-                      <li>✓ Coleta disponível</li>
                       <li>✓ Atendimento rápido</li>
                     </ul>
                   </div>
@@ -132,7 +129,7 @@ export default function MaterialsGallery() {
             Tem material para vender? Entre em contato conosco!
           </p>
           <a href="#contato" className="btn-primary">
-            Solicitar Orçamento
+            Fale Conosco
           </a>
         </div>
       </div>
