@@ -9,7 +9,7 @@ export default function LocationSection() {
           <h3 className="font-montserrat font-bold text-2xl text-gray-900 mb-8 text-center">
             Nossa Localização
           </h3>
-          <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+          <div className="w-full h-150 bg-gray-200 rounded-lg overflow-hidden shadow-lg">
             <iframe
               width="100%"
               height="100%"

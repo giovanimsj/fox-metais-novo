@@ -207,7 +207,7 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   plugins,
-  base: "/fox-metais-novo/",
+  base: "",
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
