@@ -20,14 +20,14 @@ const materials: Material[] = [
     name: 'Eletrônicos',
     description: 'Computadores, celulares, tablets, placas eletrônicas e componentes diversos.',
     image: `${ImagemEletronicos}`,
-    color: 'from-blue-500 to-blue-600',
+    color: 'from-slate-400 to-slate-500',
   },
   {
     id: 'ferro',
     name: 'Ferro',
     description: 'Ferro estrutural, chapas, tubos, sucata de ferro e aço de qualidade.',
     image: `${ImagemFerro}`,
-    color: 'from-gray-600 to-gray-700',
+    color: 'from-slate-400 to-slate-500',
   },
   {
     id: 'aluminio',
@@ -41,21 +41,21 @@ const materials: Material[] = [
     name: 'Latinha',
     description: 'Latas de alumínio, sucata de alumínio e materiais similares.',
     image: `${Latinhas}`,
-    color: 'from-yellow-400 to-yellow-500',
+    color: 'from-slate-400 to-slate-500',
   },
   {
     id: 'baterias',
     name: 'Baterias',
     description: 'Baterias automotivas, baterias recarregáveis e componentes eletrônicos.',
     image: `${ImagemBateria}`,
-    color: 'from-green-500 to-green-600',
+    color: 'from-slate-400 to-slate-500',
   },
   {
     id: 'Ferro Misto',
     name: 'Ferro Misto',
     description: 'Materiais ferrosos, como geladeiras, micro-ondas, chapas, grades e outros itens metálicos.',
     image: `${imagemMista}`,
-    color: 'from-orange-500 to-orange-600',
+    color: 'from-slate-400 to-slate-500',
   },
 ];
 
@@ -72,7 +72,7 @@ export default function MaterialsGallery() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-orange-600 to-orange-400 mx-auto mb-6"></div>
           <p className="font-roboto text-lg text-gray-600 max-w-2xl mx-auto">
-            Compramos diversos tipos de materiais reciclados com qualidade garantida e os melhores preços do mercado.
+            Trabalhamos com sucatas ferrosas e não ferrosas. Entre em contato e saiba mais sobre nossos serviços de coleta e comercialização.
           </p>
         </div>
 
@@ -104,20 +104,6 @@ export default function MaterialsGallery() {
                 <p className="font-roboto text-gray-600 text-sm leading-relaxed">
                   {material.description}
                 </p>
-
-                {/* Expandable Details */}
-                {selectedMaterial === material.id && (
-                  <div className="mt-4 pt-4 border-t border-gray-200 animate-in fade-in slide-in-from-top-2">
-                    <p className="font-roboto text-sm text-orange-600 font-semibold mb-3">
-                      Características:
-                    </p>
-                    <ul className="font-roboto text-sm text-gray-600 space-y-2">
-                      <li>✓ Qualidade garantida</li>
-                      <li>✓ Melhor preço do mercado</li>
-                      <li>✓ Atendimento rápido</li>
-                    </ul>
-                  </div>
-                )}
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { sendMessage } from '../lib/sendmessage'
 import { useState } from 'react';
 
 export default function ContactSection() {
@@ -19,14 +20,13 @@ export default function ContactSection() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log('Form submitted:', formData);
+    sendMessage(e.currentTarget);
     setSubmitted(true);
+    setFormData({ name: '', email: '', phone: '', message: '' });
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', message: '' });
     }, 3000);
   };
 
